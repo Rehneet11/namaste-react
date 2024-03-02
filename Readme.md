@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React
 
 # Parcel
@@ -19,3 +20,6 @@
 - Tree Shaking - remove unused code
 - Different dev and production bundles
 -p Parcel is fast because of .parcel-cache folder
+=======
+# React 🚀🤘❤️❤️
+>>>>>>> e9115859ab011faaf55e4f12558db15f864cf092
