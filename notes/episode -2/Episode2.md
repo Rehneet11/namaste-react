@@ -9,7 +9,7 @@ package.json can have ^ or ~ which means approx version
 
 
 # integrity
-It is a hash to verify whatever is on my machine is same as that on production such the code doesn't breaks on production
+It is a hash to verify whatever is on my machine is same as that on production such the code doesn't breaks on production 
 
 
 # transitive dependencies

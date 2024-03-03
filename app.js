@@ -1,22 +1,30 @@
         import React from "react";
         import ReactDOM from "react-dom/client";
-        const parent=React.createElement(
-        "div",
-        {id:"parent"},
-        [React.createElement("div",{id:"child"},
-        [React.createElement("h1",{},"I am a h1 tag"),
-        React.createElement("h2",{},"I am a h2 tag")]),
-
-
-        React.createElement("div",{id:"child2"},
-        [React.createElement("h1",{},"I am a h1 tag"),
-        React.createElement("button",{},"I am a button")])
-    ]);
-        
-        //parebt is a React Element i.e. it is an OBJECT it has some properties to it
-        // During renderingnThis React becomes HTML which browser under stands
-        
-        const root =ReactDOM.createRoot(document.getElementById("root"));
-        root.render(parent);
-    //heading is an  js object i.e a React Element
-   
+        // React Element
+        //const ele=<span>React Element </span>
+        const Title = ()=>(
+            <h1 className="head" tabIndex="5"> 
+            This is a JSX Functional Component 
+            </h1>
+        );  
+        // const Title =function(){
+        //     return <h1 className="head" tabIndex="5"> 
+        //     This is a JSX Functional Component 😍
+        //     </h1>
+        // };  
+        // const HeadingComponent2=()=>{
+        //     return <h1>This is a Functional Component</h1>;
+        // };
+        //Also called component Composition => Component k andr Component
+        const data=10000;
+        const HeadingComponent=()=>(
+            <div id="container" >
+                {data}
+                <Title/>
+                <h1 className="heading">
+                This is also a functional Component
+                </h1>
+            </div>    
+        );
+        const root=ReactDOM.createRoot(document.getElementById("root"))
+        root.render(<HeadingComponent/>);
